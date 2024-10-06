@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #99C1B9;
+    --secondary-color: #284B63;
+    --accent1-color: #FFFF70;
+    --accent2-color: #F47E3E;
+    --heading-font: "Julius Sans One", Impact, Courier;
+    --text-font: Barlow, Helvetica, sans-serif;
+}
+
+body {
+    padding: 50px;
+}
+
+header {
+    font-family: var(--text-font);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--heading-font) ;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color)
+}
+
+p {
+    font-family: var(--text-font);
+    line-height: 30px;
+}
+
+
+div.hero{
+    position: relative;
+}
+.hero article img {
+    padding: 1em;
+    position: relative;
+    float: right;
+    width: 30%;
+}
+.hero article {
+    padding: 1em;
+    top: 40%;
+    right: 10%;
+    left: 10%;
+    position: absolute;
+    background-color: var(--accent2-color);
+        opacity: 90%;
+    line-height: 30px;
+}
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--accent1-color);
+        opacity: 80%;
+}
+
+.sociallinks img {
+    width: 50px;
+}
+.sociallinks a {
+    text-decoration: none;
+}
