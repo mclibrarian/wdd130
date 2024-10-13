@@ -4,7 +4,7 @@
     --accent1-color: #FFFF70;
     --accent2-color: #F47E3E;
     --heading-font: "Julius Sans One", Impact, Courier;
-    --text-font: Barlow, Helvetica, sans-serif;
+    --text-font: "Barlow", Helvetica, sans-serif;
 }
 
 body {
@@ -13,7 +13,44 @@ body {
 
 header {
     font-family: var(--text-font);
+    font-size: 2em;
     text-decoration: none;
+    margin: 1rem auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 120px 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+header > img{
+    margin-bottom: 2em;
+	height: 180px;
+    width: 180px
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    text-align: right;
+    margin-left: 100px;
+    justify-content: space-evenly;
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: var(--secondary-color);
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: var(--accent2-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 h1 {
@@ -32,8 +69,9 @@ p {
 }
 
 
-div.hero{
+div.hero {
     position: relative;
+    margin-bottom: 2em;
 }
 .hero article img {
     padding: 1em;
@@ -56,17 +94,61 @@ div.hero{
     width: 100%;
     height: auto;
 }
-
 .hero h1 {
     position: absolute;
     top: 10%;
     width: 100%;
     text-align: center;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-color: var(--accent1-color);
         opacity: 80%;
 }
 
+.history h2 {
+    width: 100%;
+    text-align: center;
+    grid-column-end: span 5;
+}
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.history > img {
+    margin: 2em;
+}
+
+.adventure h2 {
+    width: 100%;
+    text-align: center;
+    grid-column-end: span 5;
+}
+section.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2em;
+}
+figure{
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
 .sociallinks img {
     width: 50px;
 }
