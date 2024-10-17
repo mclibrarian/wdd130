@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gowun Dodum', Helvetica, sans-serif;
+    font-size: large;
+}
+
+header {
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px;
+    border-radius: 1rem;
+    background-color:thistle;
+    display: grid;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.25rem;
+    font-family: "Delius Swash Caps", Georgia, serif;
+    font-size: larger;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 1%;
+    font-size: large;
+}
+
+input[type="checkbox"] {
+    height: 50%;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 2rem;
+    background-color:palegreen;
+    font-size: large;
+    border: 2px solid lightslategray;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color:mistyrose;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid #000;
+    margin: 2rem;
+}
