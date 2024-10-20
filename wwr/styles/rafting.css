@@ -129,6 +129,29 @@ section.adventure {
     grid-template-rows: 1fr;
     margin-bottom: 2em;
 }
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2em;
+}
+.map{
+    display: flex;
+    justify-content: right;
+    padding-right: 5em;
+}
+
+.employees h2 {
+    width: 100%;
+    text-align: center;
+    grid-column-end: span 5;
+}
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2em;
+}
 figure{
     border: thin #c0c0c0 solid;
     display: flex;
@@ -143,6 +166,48 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+}
+
+form{
+    width: auto;
+    margin: 50px;
+    padding: 1rem;
+    border: 2px;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    display: grid;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+div {
+    font-family: var(--text-font);
+    font-size: large;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.message {
+    padding: 1%;
+    font-size: large;
+}
+
+button {
+    margin: 2rem;
+    background-color:var(--accent2-color);
+    font-size: large;
+    border: 2px solid lightslategray;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
 }
 
 .sociallinks {
