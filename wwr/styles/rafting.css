@@ -60,7 +60,9 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
 }
 
 p {
@@ -68,8 +70,20 @@ p {
     line-height: 30px;
 }
 
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 5rem;
+    column-gap: 3rem;
+}
 
-div.hero {
+.home img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.hero {
     position: relative;
     margin-bottom: 2em;
 }
@@ -168,6 +182,100 @@ figcaption {
     text-align: center;
 }
 
+.articles h2 {
+    grid-column-end: span 5;
+}
+
+.articles {
+    display: grid;
+    margin-left: 10rem; 
+    margin-right: 10rem;
+    margin-top: 4rem;
+}
+
+.trips_grid {
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 33% 33% 33%;
+}
+
+.dientes{
+    text-wrap: wrap;
+    grid-column: span 2;
+    grid-row: 1;
+}
+.dientes img{
+    width: 10em;
+    float: right;
+    margin-right: 6rem;
+    margin-left: 1rem;
+}
+
+.mallard{
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 2rem;
+}
+.mallard img{
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.half_day{
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 2rem;
+}
+.half_day img{
+    height: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+table.caption {
+    font-family: var(--heading-font);
+}
+thead {
+    font-size: 2.1rem;
+    font-family: var(--heading-font);
+}
+table {
+    border: 2px solid rgb(140 140 140);
+    font-family: var(--text-font);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+tbody > tr:nth-of-type(odd) {
+    background-color:var(--primary-color);
+  }
+
+.sign_up {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 2rem;
+    background-color: var(--accent1-color);
+}
+
+.start {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
 form{
     width: auto;
     margin: 50px;
@@ -178,10 +286,6 @@ form{
     display: grid;
 }
 
-h2 {
-    width: 100%;
-    text-align: center;
-}
 div {
     font-family: var(--text-font);
     font-size: large;
